@@ -1,0 +1,236 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #131518;
+}
+@import url("https://fonts.googleapis.com/css2?family=Overpass&display=swap");
+
+/*Main screen*/
+.container {
+  margin: 10% auto;
+  width: 412px;
+  height: 416px;
+  background: radial-gradient(
+    98.96% 98.96% at 56% 0%,
+    #232a34 0%,
+    #181e27 100%
+  );
+  border-radius: 30px;
+}
+.star {
+  width: 48px;
+  height: 48px;
+  background-color: #262e38;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 46px;
+}
+
+/*Main Screen padding*/
+.main {
+  padding: 32px 30px 32px 32px;
+}
+
+.main--title {
+  font-size: 28px;
+  line-height: 35.45px;
+  color: #ffffff;
+  margin-bottom: 7px;
+  font-family: "Overpass", sans-serif;
+  font-weight: 700;
+}
+
+.main--txt {
+  font-size: 15px;
+  line-height: 24px;
+  color: #969fad;
+  margin-bottom: 24px;
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+}
+
+.numbers {
+  display: flex;
+  gap: 21px;
+  font-family: "Overpass", sans-serif;
+  font-weight: 700;
+}
+
+ul {
+  display: flex;
+  gap: 21px;
+}
+
+li {
+  list-style: none;
+}
+
+li button {
+  border: none;
+}
+
+.number--circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 51px;
+  height: 51px;
+  background-color: #262e38;
+  border-radius: 50%;
+  color: #7c8798;
+  margin-bottom: 32px;
+}
+
+.number--circle:hover {
+  background-color: #fc7614;
+  color: #ffffff;
+}
+
+.number--circle:active {
+  background-color: #7c8798;
+  color: #ffffff;
+}
+
+.submit {
+  width: 100%;
+  background: #fc7614;
+  border-radius: 22.5px;
+  padding: 11px 138px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all ease 0.2s;
+  /*font*/
+  font-family: "Overpass", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: 2px;
+}
+
+.submit:hover {
+  background-color: #ffffff;
+  color: #fc7614;
+}
+
+/*Second screen*/
+
+.second--screen {
+  padding: 45px 40px 45px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.second--screen h1 {
+  margin-bottom: 7px;
+}
+
+.second--screen p {
+  text-align: center;
+}
+
+.svg--file {
+  width: 162px;
+  height: 108px;
+  margin-bottom: 32px;
+}
+
+.result {
+  width: 193px;
+  height: 32px;
+  border-radius: 22.5px;
+  background-color: #262e38;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fc7614;
+  margin-bottom: 32px;
+}
+
+.hidden {
+  display: none;
+}
+
+.attribution {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 415px) {
+  .container {
+    margin: 25% auto;
+    width: 327px;
+    height: 360px;
+  }
+
+  .main {
+    padding: 24px 24px 32px 24px;
+  }
+
+  .star {
+    margin-bottom: 16px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .numbers {
+    height: 42px;
+    margin-bottom: 20px;
+  }
+
+  ul {
+    gap: 17px;
+    height: 42px;
+  }
+
+  .btn {
+    width: 42px;
+    height: 42px;
+    margin-bottom: 24px;
+  }
+
+  .submit {
+    width: 279px;
+    height: 45px;
+    padding: 12px 108px;
+  }
+
+  .main--title {
+    margin-bottom: 10px;
+  }
+
+  .main--txt {
+    margin-bottom: 20px;
+  }
+
+  .svg--file {
+    width: 144px;
+    height: 96px;
+    margin-bottom: 24px;
+  }
+
+  .result {
+    font-size: 14px;
+    line-height: 22px;
+    width: 168px;
+    height: 32px;
+  }
+
+  .second--screen h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .second--screen p {
+    font-size: 14px;
+  }
+}
